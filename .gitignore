@@ -47,3 +47,9 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# Claude worktrees (embedded git repos)
+.claude/worktrees/
+
+# Playwright MCP logs
+.playwright-mcp/

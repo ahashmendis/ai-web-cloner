@@ -5,6 +5,7 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const geistMono = Geist_Mono({
@@ -13,8 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Growthscape — Growth, Engineered.",
+  description:
+    "Creative technology studio delivering AI automation, web design, brand identity, and content systems. 150+ projects. 200+ clients. 99% satisfaction.",
+  icons: {
+    icon: [
+      { url: "/images/GROW/ICON ORANGE.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
